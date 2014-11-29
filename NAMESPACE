@@ -1,0 +1,5 @@
+export(composite, crosstabm, differenceMR, diffTablej, exchangeDij, exchangeDj, MAD, MADscatterplot, memberships, overallAllocD, overallDiff, overallDiffCatj, overallExchangeD, overallQtyD, overallShiftD, quantityDj, shiftDj)
+import(raster)
+import(rgdal)
+import(ggplot2)
+import(methods)
