@@ -5,7 +5,7 @@
 calculates overall quantity difference from a square contingency table
 }
 \description{
-calculates overall quantity difference from a contingency table derived from the crosstabulation between a comparison variable (or variable at time \emph{t}), and a reference variable (or variable at time \emph{t+1}).
+calculates overall quantity difference from a contingency table derived from the crosstabulation between a comparison variable (or variable at time \emph{t}), and a reference variable (or variable at time \emph{t}+1).
 Quantity difference is defined as the amount of difference between the reference variable and a comparison variable that is due to the less than maximum match in the proportions of the categories.  
 }
 \usage{
@@ -18,7 +18,7 @@ matrix representing a square contingency table between a comparison variable (ro
 }
 }
 \value{
-overall quantity difference between the comparison variable and the reference variable 
+overall quantity difference between the comparison variable and the reference variable. Output values are given in the same units as \code{ctmatrix} 
 }
 \references{
 Pontius Jr., R.G., Millones, M. 2011. \emph{Death to Kappa: birth of quantity disagreement and allocation disagreement for accuracy assessment}. International Journal of Remote Sensing 32 (15), 4407-4429.

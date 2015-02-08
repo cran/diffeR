@@ -1,6 +1,6 @@
-differenceMR <- function(comp, ref, eval="multiple", percent=TRUE, fact=2){
+differenceMR <- function(comp, ref, eval="multiple", percent=TRUE, fact=2, population=NULL){
 
-ctmatrix <- crosstabm(comp, ref, percent=TRUE)
+ctmatrix <- crosstabm(comp, ref, percent=TRUE, population=population)
 
 if(eval=="original"){
 resT <- as.data.frame(cbind(res(comp)[1], overallQtyD(ctmatrix), overallExchangeD(ctmatrix), overallShiftD(ctmatrix), overallDiff(ctmatrix)))

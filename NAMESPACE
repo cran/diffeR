@@ -1,4 +1,6 @@
-export(composite, crosstabm, differenceMR, diffTablej, exchangeDij, exchangeDj, MAD, MADscatterplot, memberships, overallAllocD, overallDiff, overallDiffCatj, overallExchangeD, overallQtyD, overallShiftD, quantityDj, shiftDj)
+export(composite, crosstabm, differenceMR, diffTablej, exchangeDij, exchangeDj, MAD, MADscatterplot, memberships, 
+       overallAllocD, overallComponentsPlot, overallDiff, overallDiffCatj, overallExchangeD, overallQtyD, overallShiftD,
+       quantityDj, sample2pop, shiftDj)
 import(raster)
 import(rgdal)
 import(ggplot2)

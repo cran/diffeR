@@ -5,7 +5,7 @@
 calculates overall difference at the category level from a square contingency table
 }
 \description{
-calculates overall difference at the category level from a contingency table derived from the crosstabulation between a comparison variable (or variable at time \emph{t}), and a reference variable (or variable at time \emph{t+1}). Overall difference is equivalent to the addition of the quantity and allocation components of difference (i.e., overall difference can be disaggregated into quantity and allocation components).
+calculates overall difference at the category level from a contingency table derived from the crosstabulation between a comparison variable (or variable at time \emph{t}), and a reference variable (or variable at time \emph{t}+1). Overall difference is equivalent to the addition of the quantity and allocation components of difference (i.e., overall difference can be disaggregated into quantity and allocation components).
 }
 \usage{
 overallDiffCatj(ctmatrix)
@@ -17,7 +17,7 @@ matrix representing a square contingency table between a comparison variable (ro
 }
 }
 \value{
-a numeric vector containing overall difference between the comparison variable and the reference variable at the category level
+a numeric vector containing overall difference between the comparison variable and the reference variable at the category level. Output values are given in the same units as \code{ctmatrix}
 }
 \references{
 Pontius Jr., R.G., Millones, M. 2011. \emph{Death to Kappa: birth of quantity disagreement and allocation disagreement for accuracy assessment}. International Journal of Remote Sensing 32 (15), 4407-4429.
