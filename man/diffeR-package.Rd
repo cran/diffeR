@@ -1,18 +1,18 @@
 \name{diffeR-package}
 \alias{diffeR-package}
-\alias{diffeR-package}
+\alias{diffeR}
 \docType{package}
 \title{
-Difference Metrics for Comparing Pairs of Maps
+Metrics of Difference for Comparing Pairs of Maps
 }
 \description{
-Difference metrics for comparing pairs of maps representing real or categorical variables at original and multiple resolutions.}
+Metrics of difference for comparing pairs of maps representing real or categorical variables at original and multiple resolutions.}
 \details{
 \tabular{ll}{
 Package: \tab composite\cr
 Type: \tab Package\cr
-Version: \tab 0.0-2\cr
-Date: \tab 2014-11-28\cr
+Version: \tab 0.0-3\cr
+Date: \tab 2015-07-06\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }

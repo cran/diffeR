@@ -1,7 +1,7 @@
-9e7e2c03d5d218651c784ceb7eaf40a3 *DESCRIPTION
-bae972553662e6badf9ed075191b8ef6 *NAMESPACE
-3e313f06e6d165325cd4cdfc0fba1571 *R/MAD.R
-b5fcb4a447c50475c88cf77f7bd644ca *R/MADscatterplot.R
+9c4f806996fa2cc28487456b38a964e9 *DESCRIPTION
+f2f6371aa21943e1af3952b098f011ac *NAMESPACE
+0ec044d3b9bff669c5087c29a6fd5389 *R/MAD.R
+84db4853d0908aa3d82af3230235813e *R/MADscatterplot.R
 a7c263e511549370d93335ca1b790c69 *R/composite.R
 58c63cde2fb9c2ccae4487f6f3c084c3 *R/crosstabm.R
 9e5bda5138a4d20912a1d9db768b15e5 *R/diffTablej.R
@@ -67,7 +67,7 @@ b3cc9e8ce66f4396ea7757ee113b1cae *man/MAD.Rd
 1ed9fab9c7b600107e544d5467d44017 *man/composite.Rd
 98c2cffe791f54ef1afb44a9b2e35ec6 *man/crosstabm.Rd
 49f1d1a2896037525312fd292bba43c6 *man/diffTablej.Rd
-9b86f18999331cbc97c02b687f04f3e7 *man/diffeR-package.Rd
+81f89366c58ee5d7d4bdaf762d82a153 *man/diffeR-package.Rd
 c8f4ad36b67b64ebe3643adbd7c624d7 *man/differenceMR.Rd
 237bc45e6d4904a4ee299344787142ee *man/exchangeDij.Rd
 9e6329cdf6e4a541200ba9aa61aab398 *man/exchangeDj.Rd
