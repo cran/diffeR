@@ -8,8 +8,9 @@ Category Sources plot
 If comparison and reference (raster) maps are provided, this function creates the Category Sources plot from the comparison between the comparison map (or map at time \emph{t}) and the reference map (or map at time \emph{t}+1). If a square contingency table (matrix) is provided instead of raster maps, then this function creates the Category Sources plot from the comparison between the comparison variable (or variable at time \emph{t}) and the reference variable (or variable at time \emph{t}+1). 
 }
 \usage{
-categorySourcesPlot(comp = NULL, ref = NULL, ctmatrix = NULL, units = NULL, 
-                    population = NULL)
+categorySourcesPlot(comp = NULL, ref = NULL, ctmatrix = NULL, analysis = "error", 
+                    units = NULL, population = NULL, fontSize = NULL, breaks = waiver(), 
+                    labels = waiver(), limits = NULL)
 }
 
 \arguments{
@@ -22,11 +23,37 @@ object of class RasterLayer corresponding to a reference map (or map at time \em
   \item{ctmatrix}{
 matrix representing a square contingency table between a comparison variable or variable at time \emph{t} (rows) and a reference variable or variable at time \emph{t}+1 (columns). See Details below
 }
+  \item{analysis}{
+character string indicating type of analysis, either "error" (default) or "change"
+}
   \item{units}{
 optional; character string indicating units of \code{ctmatrix}
 }
   \item{population}{
 optional; an \emph{n} x 2 matrix provided to correct the sample count to population count in the square contingency table. See Details below}
+  \item{fontSize}{
+text size (in pts)}
+  \item{breaks}{One of:
+\itemize{
+\item \code{NULL} for no breaks
+\item \code{waiver()} for the default breaks computed by the
+transformation object
+\item A numeric vector of positions
+\item A function that takes the limits as input and returns breaks
+as output
+}}
+  \item{labels}{One of:
+\itemize{
+\item \code{NULL} for no labels
+\item \code{waiver()} for the default labels computed by the
+transformation object
+\item A character vector giving labels (must be same length as \code{breaks})
+\item A function that takes the breaks as input and returns labels
+as output
+}}
+  \item{limits}{
+A numeric vector of length two providing limits of the scale.
+Use \code{NA} to refer to the existing minimum or maximum.}
 }
 
 \details{

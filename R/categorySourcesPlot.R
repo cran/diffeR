@@ -1,4 +1,5 @@
-categorySourcesPlot <- function(comp = NULL, ref = NULL, ctmatrix = NULL, units = NULL, population = NULL){
+categorySourcesPlot <- function(comp = NULL, ref = NULL, ctmatrix = NULL, analysis = "error", units = NULL, population = NULL, 
+                                fontSize = NULL, breaks = waiver(), labels = waiver(), limits = NULL){
   
   ylab <- ifelse(is.null(ctmatrix), "Percentage of Domain", 
                  ifelse(is.null(units), "units", units)) 
@@ -12,14 +13,16 @@ categorySourcesPlot <- function(comp = NULL, ref = NULL, ctmatrix = NULL, units 
     if(!is.null(population)) ctmatrix <- sample2pop(ctmatrix, population)
     resT <- data.frame(Comission = comissionj(ctmatrix), Agreement = agreementj(ctmatrix), Omission = omissionj(ctmatrix), 
                        Category = colnames(ctmatrix), stringsAsFactors = FALSE)
+    if(analysis == "change") colnames(resT)[1:3] <- c("Loss", "Persistence", "Gain")
     rownames(resT) <- NULL
   }
   
   resT2 <- melt(resT, id.var = "Category", variable.name = "differenceType")
 
   ggplot() + geom_bar(aes_(x = ~Category, y = ~value, fill = ~differenceType), colour="black", data = resT2, stat = "identity") + 
-    labs(x = "Category", y = ylab, fill = '') + theme_classic() + scale_y_continuous(expand = c(0, 0)) +
+    labs(x = "Category", y = ylab, fill = '') + theme_classic() + 
+    scale_y_continuous(expand = c(0, 0), breaks = breaks, labels = labels, limits = limits) +
     theme(legend.position="top") + coord_flip() + guides(fill = guide_legend(reverse = TRUE)) +
     # scale_fill_manual(values=c("#ff0000", "#0000ff", "#008000"))
-    scale_fill_manual(values=c("#aeaeae", "#4d4d4d", "#e6e6e6"))
+    scale_fill_manual(values=c("#aeaeae", "#4d4d4d", "#e6e6e6")) + theme(text = element_text(size = fontSize))
 }
