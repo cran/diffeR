@@ -1,4 +1,4 @@
-9d7c62a0368313a7b995a26d2dee9289 *DESCRIPTION
+2fbcf0d1717ca987018c5e43ce4cf831 *DESCRIPTION
 a91ece4887d193c3e2e400e32bf4e59e *NAMESPACE
 23317743a6925b2efbf78018af28de23 *R/MAD.R
 81088fb139ead1a5707d876b04e88e5f *R/MADscatterplot.R
@@ -64,7 +64,7 @@ c0c904a23fe1d90a469d339dc0e027fb *man/composite.Rd
 f917c6a33cbbfdde456e7d47dbb72722 *man/crosstabm.Rd
 33758d658e6f0ca6c4e7d0cd6b767dcd *man/diffMetrics.Rd
 1b7670c1cbf3c6d14bd4a0ed5e0e47b9 *man/diffTablej.Rd
-d1664b0877e3b6ba08eee3af4a19057f *man/diffeR-package.Rd
+55c87f5278705b278abfc83db9910505 *man/diffeR-package.Rd
 8f41353b911f3c5e5ad19717b9b4c9ee *man/differenceMR.Rd
 f629de3aaeba8357a0537ebd5133cf3f *man/memberships.Rd
 2eb8eef91bb7844cd450fa25bbdd3c0c *man/overallComponentsPlot.Rd

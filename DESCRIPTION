@@ -2,8 +2,8 @@ Package: diffeR
 Type: Package
 Title: Metrics of Difference for Comparing Pairs of Maps or Pairs of
         Variables
-Version: 0.0-7
-Date: 2023-02-07
+Version: 0.0-8
+Date: 2023-08-21
 Author: Robert Gilmore Pontius Jr. <rpontius@clarku.edu>, Ali Santacruz <amsantac@unal.edu.co>
 Maintainer: Ali Santacruz <amsantac@unal.edu.co>
 Depends: R (>= 2.14.0), terra, methods, ggplot2
@@ -13,6 +13,6 @@ License: GPL (>= 2)
 BugReports: https://github.com/amsantac/diffeR/issues
 URL: https://github.com/amsantac/diffeR
 NeedsCompilation: no
-Packaged: 2023-02-07 20:50:58 UTC; spaziu
+Packaged: 2023-08-20 21:19:47 UTC; spaziu
 Repository: CRAN
-Date/Publication: 2023-02-07 22:02:36 UTC
+Date/Publication: 2023-08-22 03:10:14 UTC
